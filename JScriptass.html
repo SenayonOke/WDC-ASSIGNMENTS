@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DANNYBRAIN's PAGE</title>
+</head>
+
+<style>
+	.container{
+		display: inline-flex;
+	}
+	.form, .result{
+		width:600px;
+		height: 500px;
+		margin-top: 80px;
+		margin-left: 50px;
+		
+	}
+	.form input{
+		padding: 5px 10px;
+		border-radius: 5px;
+		outline: none;
+		border: 3px;
+		width: 250px
+	}
+	.form label{
+		font-size: 15px;
+	}
+
+	.back{
+		background-color: white;
+	}
+
+	.result {
+		padding: 5px 10px;
+		border-radius: 5px;
+		outline: none;
+		border: 3px;
+		width: 100%;
+		height: 40px;
+		color: green;
+		margin-left: 120px;
+	}
+
+input {
+	background-color: blue;
+}
+
+button {
+	background-color: green;
+	color: white;
+}
+</style>
+
+<body class="back">
+	
+
+	<div class="container">
+		
+		<div class="form">
+			<h2 style="color: green;">Personal Data</h2>
+			<p>
+			<label for="name">Name</label><br>
+			<input type="text" name="full name" placeholder="Full name" id="name"></p>
+			<p>
+			<label for="DOB">Date Of Birth</label><br>
+			<input type="date" name="DOB" id="db"></p>
+			<p>
+			<label for="mail">Email Address</label><br>
+			<input type="email" name="mail" placeholder="Email address" id="email"></p>
+			<P>
+			<label for="home">Home Address</label><br>
+			<input type="text" name="home" placeholder="Home address" id="hm"></P>
+			<p>
+			<label for="number">Phone Number</label><br>
+			<input type="number" name="number" placeholder="Phone number" id="num">
+			</p>
+			<button id="sub">SUBMIT</button>
+		</div>
+
+		<div class="result">
+			<center><h2 style="color: green;">Results</h2></center>
+			<span id="fname"></span>
+			<span id="dbirth"></P>
+			<span id="eaddress"></p>
+			<span id="hom"></p>
+			<span id="phob"></p>
+		</div>
+	</div>
+
+
+	<script src="JScriptass.js"></script>
+</body>
+</html>
